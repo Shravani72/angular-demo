@@ -1,0 +1,30 @@
+<div class="container">
+
+  <input type="color" id="" matInput (change)="changed($event.target.value)">
+
+  <div class="card">
+    <div class="card__bg-color-container">
+      <div class="card__inner" *ngIf="arr.length==1">
+        <div class="card__inner-100" style="background: {{arr[0]}};"></div>
+      </div>
+      <div class="card__inner" *ngIf="arr.length==2">
+        <div class="card__inner-50" style="background: {{arr[0]}};"></div>
+        <div class="card__inner-50" style="background: {{arr[1]}};"></div>
+      </div>
+      <div class="card__inner" *ngIf="arr.length==3">
+        <div class="card__inner-25" style="background: {{arr[0]}};"></div>
+        <div class="card__inner-25" style="background: {{arr[1]}};"></div>
+        <div class="card__inner-25" style="background: {{arr[2]}};"></div>
+      </div>
+      <div class="card__inner" *ngIf="arr.length==4">
+        <div class="card__inner-25" style="background: {{arr[0]}};"></div>
+        <div class="card__inner-25" style="background: {{arr[1]}};"></div>
+        <div class="card__inner-25" style="background: {{arr[2]}};"></div>
+        <div class="card__inner-25" style="background: {{arr[3]}};"></div>
+      </div>
+    </div>
+    <div class=""></div>
+
+  </div>
+
+</div>
